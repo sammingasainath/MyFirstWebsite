@@ -1,0 +1,270 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*CSS Variables*/
+:root{
+    --navbar-height: 59px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+}
+
+/* Logo and Image*/
+
+#logo{
+
+}
+
+#logo img{ 
+    margin:3px 15px;
+    height: 66px;
+}
+
+#home{
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    color:aliceblue;
+    height: 400px;
+}
+.btn{
+color: black;
+background-color: grey;
+}
+
+.btn:hover{
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    
+}
+#logo img:hover{
+    border:3px black;
+    border-style: groove;
+}
+
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.5;
+}
+
+
+#navbar ul li{
+    list-style:none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+ display: block;
+ color: white;
+ padding: 3px 22px;
+ border-radius: 20px;
+ text-decoration: none;
+}
+
+#navbar ul li a:hover{
+color:black;
+background-color: white;
+border-color: black;
+border-width: 4px;
+border-style:groove;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 528px;
+    justify-content:center;
+    align-items: center;
+}
+
+
+#home::before{
+    content: "";
+    background:url('../bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+    
+}
+
+.h-primary{
+    font-size: 2.8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    font-weight: 100;
+    padding:12px;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+/*Services Section*/
+
+#services{
+    margin:34px;
+    
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: rgb(250, 239, 239);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#services .box img{
+    width: 150px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#imod{
+    padding-top: 30px;
+
+}
+
+/*Clients Session*/
+
+#client-section{
+    position: relative;
+
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 124px;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#client-section::before{
+    content:"";
+    position: absolute;
+    background: url(../bg.jpg);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+/*Contact Section*/
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+
+#contact input,
+#contact textarea{
+    width:100%;
+    padding: 0.3rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+
+}
+
+#contact label{
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#contact{
+    position: relative;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 21px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url(../contact.jpg) no-repeat center center/cover;
+}
+
+
+
+
+/*Utility Class*/
+
+.h-primary{
+    font-family:  Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 3.8rem;
+    padding: 12px;
+
+}
+
+.h-secondary{
+    font-family:   'Arial Narrow Bold', sans-serif;
+    font-size: 2.3rem;
+    padding: 12px;
+
+}
+#home{
+    justify-content: center;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin:17px;
+    font-size: 1.8rem;
+    border-radius: 15px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
